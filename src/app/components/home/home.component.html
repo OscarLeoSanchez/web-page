@@ -1,0 +1,109 @@
+<div class="container-fluid text-center mt-5 pt-4">
+    <!-- <h1>View BLOG</h1> -->
+    <div class="row mt-5">
+        <div class="col-lg-9 px-5" style="background: aliceblue;">
+            <div id="slider" class="carousel slide px-3" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div *ngFor="let new of news; let i=index">
+                        <ng-container *ngIf="i < 20 && new.urlToImage !== null">
+                            <div class="carousel-item active">
+                                <img [src]="new.urlToImage" class="d-block w-100" alt="">
+                                <div class="carousel-caption">
+                                    <h5 class="card-title"><a class="text-decoration-none text-title-carousel"
+                                            [href]="new.url" target="_blank"> <strong>{{new.title}} </strong></a></h5>
+                                    <p class="card-text">{{new.description}}</p>
+                                </div>
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#slider" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#slider" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
+            </div>
+            <hr class="hr-content border-dark bg-dark mt-3 px-4">
+            <div class="container-fluid">
+                <dir>
+                    <div style="text-align: right">
+                        <a href="/articles/" class="btn btn-secondary">
+                            <strong>Noticias</strong>
+                        </a>
+                    </div>
+                </dir>
+                <div class="container">
+                    <div class="row mb-3">
+                        <div class="col-md-4 mb-3" *ngFor="let new of listNews; let i=index">
+                            <ng-container *ngIf="i < 10">
+                                <div class="card border-0 card-sm h-100">
+                                    <div class="card-img-top" style="height: 200px; overflow: hidden;">
+                                        <img [src]="new.urlToImage" alt="Imagen de la noticia"
+                                            style="object-fit: cover; width: 100%; height: 100%;">
+                                    </div>
+                                    <div class="card-body">
+                                        
+                                        <h5 class="card-title"><a class="text-decoration-none text-title"
+                                                [href]="new.url" target="_blank"><strong><small>{{new.title}}</small></strong></a>
+                                        </h5>
+                                        <p class="card-text">
+                                            <strong> <small>
+                                                    <a href="#" class="text-decoration-none text-author">
+                                                        {{new.author}}
+                                                    </a></small>
+                                            </strong>
+                                            | <small class="text-muted text-sm">{{new.publishedAt}}</small>
+                                        </p>
+                                        <!-- <p class="card-text">{{new.publishedAt}}</p> -->
+                                        <!-- <a href="#" class="btn btn-category"><small>Categoria</small></a> -->
+                                    </div>
+                                </div>
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr-content border-dark bg-dark">
+                <dir>
+                    <div style="text-align: right">
+                        <a href="/articles/" class="btn btn-secondary">
+                            <strong>Blog</strong>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <div class="row mb-3">
+                            <div class="col-md-4 mb-3" *ngFor="let new of news; let i=index">
+                                <ng-container *ngIf="i > 14">
+                                    <div class="card border-0 card-sm h-100">
+                                        <div class="card-img-top" style="height: 200px; overflow: hidden;">
+                                            <img [src]="new.urlToImage" alt="Imagen de la noticia"
+                                                style="object-fit: cover; width: 100%; height: 100%;">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title"><a class="text-decoration-none text-title"
+                                                    href="enlace-de-la-noticia"><strong><small>{{new.title}}</small></strong></a>
+                                            </h5>
+                                            <p class="card-text">{{new.publishedAt}}</p>
+                                            <!-- <a href="#" class="btn btn-category"><small>Categoria</small></a> -->
+                                        </div>
+                                    </div>
+                                </ng-container>
+                            </div>
+                        </div>
+                    </div>
+
+                </dir>
+            </div>
+
+
+        </div>
+        <div class="col-lg-3 d-none d-lg-block col-12  bg-light" style="background:#3f15c8">
+            <app-sidebar (filter)="onFilterChange($event)"></app-sidebar>
+        </div>
+    </div>
+
+</div>
+
+<hr>

@@ -1,0 +1,124 @@
+
+
+@media (min-width: 770px) {
+    .blogs-title{
+        color: #323232;
+        text-decoration: none;
+    }
+    .blogs-title:hover {
+        color: #7a7878;
+        text-decoration: none;
+    }
+    
+    .blogs-img {
+        transition: all 0.2s ease-in-out;
+        border-radius: 0px;
+    }
+    .blogs-img:hover {
+        transform: scale(1.1);
+        /* border-radius: 0px; */
+    }
+    .image-container {
+        position: relative;
+        overflow: hidden;
+      }
+      .image-container {
+        height: 200px; /* Establece una altura fija para el contenedor de la imagen */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      /* .image-container-blog img {
+        width: 90%; 
+        height: auto; 
+      }
+      .image-container-blog {
+        width: 300px; 
+        height: 200px; 
+        overflow: hidden; 
+      } */
+    
+    .card   {
+        border-radius: 0px;
+        border: none;
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .card:hover{
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+        transform: scale(1.01);
+        border-radius: 0px;
+        background-color: #f2eeee;
+        border: #7a7878;
+        border-radius: 0px;
+    }
+    
+    .content-card-body{
+        /* padding: 0px; */
+        text-align: left;
+        margin-left: 10px;
+        /* background-color: #b81414; */
+    }
+    
+    .card-list-blog{
+        margin-bottom: 20px;
+        max-height: 10em;
+        overflow: hidden;
+    }
+    .hr-content{
+      border-top: 5px solid #05525e;
+      /* background-color: #044a54; */
+      margin-top: 10px;
+      margin-bottom: 10px;
+      opacity:0.8; 
+     
+    }
+    .hr-blogs{
+      border-top: 3px solid #05525e;
+      /* background-color: #044a54; */
+      margin-top: 10px;
+      margin-bottom: 10px;
+      opacity:0.1; 
+     
+    }
+  }
+/* 
+  @media (min-width: 992px) {
+    .col-lg-9 {
+      width: 100%;
+    }
+  }+/ */
+
+  /* @media (max-width: 991.98px) {
+    .col-lg-9 {
+      width: 100%;
+    }
+    
+    .col-lg-3 {
+      display: none;
+    }
+  }  */
+
+  .text-title{
+    color: #545454;
+    text-decoration: none;
+
+  }
+  .text-title:hover {
+    color: #024f5b;
+    text-decoration: none;
+  }
+
+  .text-author{
+    color: #096874;
+    text-decoration: none;
+  }
+  .text-author:hover {
+    color: #08525c;
+    text-decoration: none;
+  }
+
+
+  

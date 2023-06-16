@@ -1,0 +1,23 @@
+/* .text-position{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+} */
+
+.text-position{
+    top: 1px;
+    right: 50px;
+    /* background-color: #a21818; */
+    text-align: left;
+    
+}
+
+.position-component{
+    /* background: #000; */
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+  /* align-items: flex-start; */
+    /* position: relative; */
+    
+}

@@ -1,0 +1,99 @@
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.carousel-caption h3 {
+  font-size: 24px;
+}
+
+.carousel-item img {
+  height: 400px; /* Ajusta la altura de las imágenes según tu necesidad */
+  object-fit: cover;
+}
+
+
+/* ---------------------- */
+.hr-content{
+    border-top: 5px solid #05525e;
+    /* background-color: #044a54; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity:0.8; 
+   
+  }
+
+  .text-title{
+    color: #545454;
+    text-decoration: none;
+
+  }
+  .text-title:hover {
+    color: #024f5b;
+    text-decoration: none;
+  }
+
+  .text-author{
+    color: #096874;
+    text-decoration: none;
+  }
+  .text-author:hover {
+    color: #08525c;
+    text-decoration: none;
+  }
+
+  .card-list-blog{
+    /* margin-bottom: 20px;
+    max-height: 10em; */
+    overflow: hidden;
+    background-color: #ffffff;
+    
+}
+
+.btn-category {
+    display: inline-block;
+    padding: 0.5em 1em;
+    line-height: 1;
+    background-color: #037ca9;
+    color: #ffffff;
+    border: none;
+    border-radius: 5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.7em;
+
+  }
+  
+  .text-title-carousel{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .carousel-caption {
+      display: none;
+    }
+    .card-sm{
+      margin-bottom: 20px;
+    }
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    .carousel-caption {
+      display: block;
+    }
+    .card-sm{
+      margin-bottom: 10px;
+
+    }
+    .container-card{
+      height: 450px;
+      background-color: #000
+    }
+  }
