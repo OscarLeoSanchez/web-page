@@ -1,0 +1,69 @@
+<div class="container-fluid text-center">
+    <!-- <h1>View CONTACT ME</h1> -->
+    <div class="card shadow-lg o-hidden border-0 my-5">
+        <div class="card-body p-0">
+            <div class="p-5">
+                <div class="text-center">
+                    <h4 class="text-dark mb-4">Get in Touch</h4>
+                </div>
+
+                <form class="user" th:action="@{/registro/registros}" th:object="${register}" method="post">
+                    <div class="card p-1">
+                        <!-- <div class="">
+                  <h4 class="text-dark mb-4 mb-sm-1">
+                    Contact Name
+                  </h4>
+                </div> -->
+                        <br><br>
+
+                        <!-- <hr class="col-md-5 mx-2" /> -->
+                        <div class="row mb-3">
+                            <div class="form-group col-md-6 position-component">
+                                <label class="px-2 text-position nose" for="producto">First Name</label>
+                                <input type="text" class="form-control" th:field="*{userId}" id="id-nombre"
+                                    placeholder="" value="" name="name" required />
+                            </div>
+                            <div class="form-group col-md-6 position-component">
+                                <label class="px-2 text-position" for="producto">Last Name</label>
+                                <input type="text" class="form-control" th:field="*{userId}" id="id-nombre"
+                                    placeholder="" value="" name="name" required />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-12 mb-3 mb-sm-0 position-component">
+                                <label class="px-2 text-position" for="id-nombre">Company</label>
+                                <input type="text" class="form-control" th:field="*{userId}" id="id-nombre"
+                                    placeholder="" value="" name="name" required />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-12 mb-3 mb-sm-0 position-component">
+                                <label class="px-2 text-position" for="id-nombre">Email</label>
+                                <input type="text" class="form-control" th:field="*{userId}" id="id-nombre"
+                                    placeholder="" value="" name="name" required />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-12 position-component">
+                                <label class="px-2 text-position" for="id-comentario">Message</label>
+                                <textarea class="form-control" placeholder=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb3">
+                        <div class="col-sm-6 mb-3 mb-sm-0 my-2 btn-for-control">
+                            <button type="reset" class="btn btn-secondary d-block w-100 btn-for-control">
+                                Cancel
+                            </button>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0 my-2">
+                            <button type="submit" class="btn btn-primary d-block w-100 btn-for-control bnpb">
+                                Contact
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+<div class="container-fluid text-center mt-5">
+    <!-- <h1>View BLOG</h1> -->
+    <div class="row mt-5">
+        <div class="col-lg-9">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="image-container">
+                                    <a href="URL_DEL_CONTENIDO">
+                                        <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            class="card-img-top blogs-img" alt="...">
+                                    </a>
+                                </div>
+                                <h5 class="card-title"> <a class="blogs-title" href="">Título del contenido</a> </h5>
+                                <p class="card-text">Descripción corta del documentos.
+                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                </p>
+                                <p class="card-text">
+                                    <strong> <small>
+                                            <a href="URL_DEL_AUTOR" class="text-decoration-none text-author">
+                                                Data Science
+                                            </a></small>
+                                    </strong>
+                                    | <small class="text-muted text-sm">May 23, 2023 at 4:39 pm</small>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="image-container">
+                                    <a href="URL_DEL_CONTENIDO">
+                                        <img src="https://images.pexels.com/photos/2422556/pexels-photo-2422556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            class="card-img-top blogs-img" alt="..."></a>
+                                </div>
+                                <h5 class="card-title"> <a class="blogs-title" href="">Título del contenido</a> </h5>
+                                <p class="card-text">Descripción corta del documentos.
+                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                </p>
+                                <p class="card-text">
+                                    <strong> <small>
+                                            <a href="URL_DEL_AUTOR" class="text-decoration-none text-author">
+                                                Data Science
+                                            </a></small>
+                                    </strong>
+                                    | <small class="text-muted text-sm">May 23, 2023 at 4:39 pm</small>
+                                </p>
+                                <!-- <a href="">Data Science</a> | May 23, 2023 at 4:39 pm -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-content border-dark bg-dark">
+            <dir class="container-fluid" *ngFor="let blog of blogs">
+                <div class="card mb-3 card-list-blog">
+                    <div class="row g-0">
+                        <div class="col-md-4 image-container-blog">
+                            <a href="URL_DEL_CONTENIDO">
+                                <img src="{{blog.img}}" class="img-fluid blogs-img" alt="...">
+                            </a>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body content-card-body">
+                                <h5 class="card-title"> <strong>
+                                        <a href="URL_DEL_CONTENIDO" class="text-decoration-none text-title">
+                                            {{blog.Title}}
+                                        </a></strong>
+                                </h5>
+                                <p class="card-text">{{blog.Content}} </p>
+                                <p class="card-text">
+                                    <strong> <small>
+                                            <a href="URL_DEL_AUTOR" class="text-decoration-none text-author">
+                                                {{blog.Author}}
+                                            </a></small>
+                                    </strong>
+                                    | <small class="text-muted text-sm">{{blog.Date}}</small>
+                                </p>
+                                <!-- <p class="card-text"> {{blog.Author}} | <small class="text-muted">{{blog.Date}} </small>
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr-blogs d-none d-md-block">
+            </dir>
+            <hr>
+        </div>
+        <div class="col-lg-3 d-none d-lg-block col-12  bg-light" style="background:#3f15c8">
+            <app-sidebar></app-sidebar>
+        </div>
+    </div>
+</div>
+
+<hr>
