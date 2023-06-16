@@ -10,6 +10,14 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
+        "deploy": {
+          "builder": "ngx-build-plus:deploy",
+          "options": {
+            "baseHref": "/web-page/",
+            "outputPath": "dist/web-page",
+            "name": "web-page"
+          }
+        },        
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
